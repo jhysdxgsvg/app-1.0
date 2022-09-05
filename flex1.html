@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex1</title>
+    <style>
+    boby
+    {margin: 0; height: 100vh; background-color: aqua;}
+    .flex
+    {display: flex;}
+    .qingse
+    {background-color: aquamarine;}
+    .flex1
+    {flex: 1;}
+    .column 
+    {flex-direction:column ;}
+    .bianju
+    {margin: 8px;}
+    .youbianju
+    {margin-right: 8px;}
+    .shangbianju
+    {margin-top: 8px;}
+    .yinying
+    {box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;;}
+    .daohang
+    {padding: 10px 20px; border-bottom: 1px solid rgb(255, 112, 112); font-size: 14px; color: blueviolet;}
+    </style>
+</head>
+<body class="flex">
+ 
+    <!-- 侧边栏 -->
+    <div style="width: 200px; z-index: 2;" class="qingse">
+    <!-- 头像栏 -->
+    <div style="padding: 10px;align-items: center;justify-content: center;border-bottom: 1px solid #999 " class="flex">
+        <img src="G:/n1.png" alt="头像" width="40px" height="40px">
+    <div style="margin-left: 10px;">蟲師</div></div>
+    <!-- 导航栏 -->
+    <div class="flex1">
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+        <div class="daohang">导航</div>
+    </div>
+    </div>
+    <!-- 主区域 -->
+    <div class="flex1 flex column">
+         <!-- 头部栏 -->
+         <div style="height: 60px; z-index: 1;" class="qingse"></div>
+         <!-- 内容栏 -->
+         <div style="overflow: auto;" class="flex1 flex">
+            <!-- 内容左区 -->
+            <div style="flex:3" class="flex column bianju ">
+                <!-- 数据区 -->
+                <div class="flex">
+                    <!-- 数据块 -->
+                    <div style="height: 100px" class="flex1  qingse yinying youbianju"></div>
+                    <div style="height: 100px" class="flex1  qingse yinying youbianju"></div>
+                    <div style="height: 100px" class="flex1  qingse yinying youbianju"></div>
+                    <div style="height: 100px" class="flex1  qingse yinying youbianju"></div>
+                </div>
+                <!-- 列表区 -->
+                <div class="flex column">
+                    <!-- 列表项 -->
+                    <div style="height: 160px;" class="  qingse yinying shangbianju"></div>
+                    <div style="height: 160px;" class="  qingse yinying shangbianju"></div>
+                    <div style="height: 160px;" class="  qingse yinying shangbianju"></div>
+                    <div style="height: 160px;" class="  qingse yinying shangbianju"></div>
+                    <div style="height: 160px;" class="  qingse yinying shangbianju"></div>
+                    <div style="height: 160px;" class="  qingse yinying shangbianju"></div>
+                </div>
+            </div>
+            <!--内容右区-->
+            <div style="flex:1" class="flex column youbianju shangbianju ">
+            <!-- 提示区 -->
+            <div style="height: 150px;" class=" qingse yinying"></div>
+            <!-- 消息区 -->
+            <div style="height: 300px;" class=" qingse yinying shangbianju"></div>
+            </div>
+         </div>
+    </div>
+   
+    
+</body>
+</html>
